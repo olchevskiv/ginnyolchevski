@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+::selection {
+    color: #FFB703;
+    background-color: none;
+}
 
 /* Navbar */
 nav {
