@@ -5,7 +5,8 @@ html, body {
     margin:0;
     padding:0;
 
-    background-color: #90BE6D;
+    /*background-color: #90BE6D;*/
+    background-color: #f5f5f5;
 }
 
 a {
@@ -28,15 +29,13 @@ nav {
 }
 
 nav > ul {
-    flex: 1;
-    max-width: 30%;
-    display: flex;
-    justify-content: space-evenly ;
-    overflow:hidden;
+    display: inline;
 }
 
 .nav-item, .nav-item > li {
     display: inline;
+    margin: 0;
+    padding-right: 2em;
 }
 
 .nav-link {
@@ -59,9 +58,10 @@ nav > ul {
 }
 
 
-/* Hero */
+/* -------- Hero -------- */
 #hero {
     padding-top: 95px;
+    width:100%;
 }
 
 
@@ -79,22 +79,70 @@ nav > ul {
     font-family: 'Playfair Display', Serif;
     font-size: 4em;
     letter-spacing: 2px;
-    color: white;
+    color: #90BE6D
+   /* color: white;*/
 
 }
 
 #hero-desc {
    /* font-family: 'Fanwood Text', Serif;    font-family: 'Muli', Sans-Serif;*/
     font-family: 'Source Sans Pro', Sans-Serif;
-    color: white;
+    color: #90BE6D;
+   /* color: white;*/
     font-size: 2em;
+    width:100%;
 
 }
-#hero-img {
-    display:inline-block;
+#hero-img-container{
+    height: auto;
+    object-fit: contain; 
 }
-@media (min-width: 544px) {
-.hero-container {
-    padding: 2em 0 0;
+
+/* -------- Projects -------- */
+
+#projects {
+
 }
+
+@media (max-width: 800px) {
+    .hero-container {
+        padding-left: 3em;
+    }
+    #hero-title{
+        font-size: 3em;
+    }
+    #hero-img {
+        width: 300px;
+    }
+    nav ul {
+        align-items:center;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .hero-container {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    #hero-title{
+        font-size: 2.5em;
+    }
+    #hero-desc{
+        font-size:1.5em;
+    }
+
+}
+
+@media (max-width: 450px) {
+    
+    #hero-title{
+        font-size: 2em;
+    }
+    #hero-img {
+        width: 200px;
+    }
+    nav ul {
+        align-items:center;
+    }
 }
