@@ -5,8 +5,8 @@ html, body {
     margin:0;
     padding:0;
 
-    /*background-color: #90BE6D;*/
-    background-color: #f5f5f5;
+    background-color: #90BE6D;
+    
 }
 
 a {
@@ -14,8 +14,8 @@ a {
 }
 
 ::selection {
-    color: #FFB703;
-    background-color: none;
+    color: white;
+    background-color: #FFB703;
 }
 
 /* Navbar */
@@ -83,16 +83,14 @@ nav > ul {
     font-family: 'Playfair Display', Serif;
     font-size: 4em;
     letter-spacing: 2px;
-    color: #90BE6D
-   /* color: white;*/
+    color: white;
 
 }
 
 #hero-desc {
    /* font-family: 'Fanwood Text', Serif;    font-family: 'Muli', Sans-Serif;*/
     font-family: 'Source Sans Pro', Sans-Serif;
-    color: #90BE6D;
-   /* color: white;*/
+    color: white;
     font-size: 2em;
     width:100%;
 
@@ -128,25 +126,26 @@ nav > ul {
     .hero-container {
         padding-left: 5em;
         padding-right: 5em;
+        flex-direction: column;
     }
     #hero-title{
-        font-size: 2.5em;
+        font-size: 3em;
     }
     #hero-desc{
         font-size:1.5em;
+    }
+    nav ul {
+        visibility: hidden;
     }
 
 }
 
 @media (max-width: 450px) {
-    
     #hero-title{
         font-size: 2em;
     }
     #hero-img {
         width: 200px;
     }
-    nav ul {
-        align-items:center;
-    }
+
 }
