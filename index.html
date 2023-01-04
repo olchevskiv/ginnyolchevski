@@ -6,116 +6,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The portfolio of Ginny Olchevski">
-    <meta name="keywords" content="Ginny Olchevski Web Developer">
+    <meta name="keywords" content="Virginia Ginny Olchevski Full Stack Web Developer">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/groovy-flower-logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <title>Ginny Olchevski</title>
 
 </head>
 
+<style>
+
+</style>
+<script>
+    function toggle_menu() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+
+        var y = document.getElementById("hambar");
+        if (y.className === "nav-ham") {
+            y.className += " responsive";
+        } else {
+            y.className = "nav-ham";
+        }
+
+        var z = document.getElementById("toggle_hamburger");
+        if (z.className === "ham-icon") {
+            z.className += " d-none";
+        } else {
+            z.className = "ham-icon";
+        }
+    }
+</script>
 <body>
-
-    <!-- Nav Bar -->
-    <nav>
-        <a href="#hero"><img id="nav-logo" src="assets/img/groovy-flower-logo2.png"
-                alt="Ginny Olchevski logo : groovy style orange flower"></a>
-        <ul>
-            <li class="nav-item">
-                <a href="#projects" class="nav-link">Work</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-    <!-- Main Page -->
-    <div class="main">
-
-        <!-- Hero -->
-        <section id="hero">
-            <div class="hero-container">
-                <div id="hero-text">
-                    <h1 id="hero-title">Hello World.<br> I am Ginny Olchevski.</h1>
-                    <p id="hero-desc">I am a developer. I am a designer. I am a lifelong learner.</p>
+<div >
+    <div class="page">
+        <header>
+            <nav>
+                <div class="logo" tabindex="-1">
+                    <a href="" >
+                        <img height="50" width="50" src="assets/img/logo.png"></img>
+                    </a>
                 </div>
-                <div id="hero-img-container">
-                    <img id="hero-img" src="assets/img/pixel-art-me.gif">
+                
+                <div class="nav-links">
+                    <ol class="nav" id="navbar">
+                        <li><a href="#about">About</a></li>
+                       <!----<li><a href="#experience">Experience</a></li>--> 
+                        <li><a href="#contact">Contact</a></li>
+                     
+                    </ol>
                 </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <!--
-        <section id="projects">
-            <div class="projects-container">
-                <h2 class="sub-title">My Work</h2>
-
-                <div class="project-row">
-                    <div class="project-box">
-                        <img class="proj-img" src="assets/img/proj1.png">
-                        <div class="proj-desc">
-                            <h3>My Website</h3>
-                            <p>Developed this website with pure HTML, CSS and JavaScript! It's always in development, so
-                                check back every so often for changes as I improve my skills.</p>
+               
+                <div class="ham-icon" id="toggle_hamburger"><a href="javascript:void(0);" onclick="toggle_menu()" ><i class="fa fa-bars"></i></a></div>
+                <ul class="nav-ham" id="hambar">
+                    <li class="ham-btn"><a href="javascript:void(0);" onclick="toggle_menu()" ><i class="fa fa-bars"></i></a></li>
+                    <li><a href="#about">About</a></li>
+                   <!----<li><a href="#experience">Experience</a></li>--> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+               
+            </nav>
+        </header>
+        <div orientation="left" class="social-list-container">
+            <ul class="social-list">
+                <li>
+                    <a href="https://github.com/olchevskiv/ginnyolchevski" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github" ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/virginia-olchevski-8332b0153/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin" ></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <main>
+                <section class="hero">
+                    <div class="">
+                        <div class="hero-title-sm" tabindex="0"><h4>Hello world, my name is</h4></div>
+                        <div class="hero-title" tabindex="0"><h2>Ginny Olchevski</h2></div>
+                        <div class="hero-description" tabindex="0">
+                            <p>I am a full stack web developer. Currently, developing full-time at <a href="https://www.acistek.com/" target="_blank">Acistek</a></p>
+                        </div>
+                        <div class="mt-6">
+                           <a class="resume-button" href="javascript:void(0);" rel="noopener noreferrer"> This page is currently under construction<!---View my resume!---></a>
+                            
                         </div>
                     </div>
-                    <div class="project-box">
-                        <img class="proj-img" src="assets/img/proj2.png">
-                        <div class="proj-desc">
-                            <h3>Artist Portfolio Website</h3>
-                            <p>Current project of mine: developing a website for a local artist to showcase
-                                their artwork and attract customers.</p>
-                        </div>
-
+                    <div class="hero-image">
+                        <img  src="assets/img/hero-bird.png"></img>
                     </div>
-                    <div class="project-box">
-                        <img class="proj-img" src="assets/img/proj2.png">
-                        <div class="proj-desc">
-                            <h3>Etsy Shop</h3>
-                            <p>I create pixel art for Twitch streamers.</p>
+                </section>
+
+                <section id="about" class="about">
+                    <h3 >About Me</h3>
+                    <div class="seperator"></div>
+                   
+                    <div class="content">
+                        <div class="about-image">
+                            <img  src="assets/img/me.png"></img>
                         </div>
+                        <div class="about-description" tabindex="0">
+                            <p>
+                                Hello! I am Ginny, but I also go by Virginia. I am a full stack web developer currently working on various projects at 
+                                <a href="https://www.acistek.com/" target="_blank">Acistek</a> for a diverse range of clients. 
+                                My greatest enjoyment with web development is creating products that make clients go WOW!
+                            </p>
 
+                            <p>
+                                I have been working in this industry for over 2 years now and along with my work at Acistek, I have been focused on developing 
+                                my skillset in building inclusive and enjoyable user web experiences. I like to say that I bring together two worlds with my formal education background in Computer Science and my hobby in art and design to create products that are both beautiful and functional.
+                            </p>
+
+                            <p>
+                                Some technologies I currently work with include:
+                            </p>
+                            <ul class="skill-list">
+                                <li>Javascript</li>
+                                <li>HTML</li>
+                                <li>Python</li>
+                                <li>Coldfusion</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="project-row">
+                <!---
+                <section id="experience" class="experience">
+                    <h3>My Experiences So Far</h3>
+                    <div class="seperator"></div>
+                    <div class="content">
+                        <ul >
+                            <li>Acistek</li>
+                            <li>JMU University</li>
+                            <li>ASM Research</li>
+                        </ul>
+                    </div>
+                </section>----->
 
-                </div>
+                <section id="contact" class="contact">
+                    <h3>Say Hello! <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i></h3>
+                    <div class="seperator"></div>
 
+                    <div class="content">
+                        <div class="contact-description" tabindex="0">
+                            <p>
+                                Interested in reaching out to me? Fill out this handy contact form, and I'll do my best to reply within 24 hours.
+                            </p>
+                            <p class="mt-6 mb-6">
+                                Or you can email me directly at <span class="underline">ginnyolchevski@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="contact-form" tabindex="0">
+                            <form action="https://formspree.io/f/xknanrvr" method="POST">
 
-            </div>
-        </section>
-        -->
-        <!-- About -->
-        <section id="about">
+                                <label for="name">Name *</label>
+                                <div class="input-group">
+                                    <input required class="form-field" type="text" id="name" name="name" placeholder="Full Name">
+                                </div>
 
-        </section>
+                                <label for="email">E-mail *</label>
+                                <div class="input-group">
+                                    <input required class="form-field" type="text" id="email" name="email" placeholder="E-mail">
+                                </div>
+                            
+                                <label for="msg">Message *</label>
+                                <div class="input-group">
+                                    <textarea  id="msg" name="msg" placeholder="Hello Ginny..." style="height:200px"></textarea>
+                                </div>
 
-
-        <section id="education"></section>
-        <section id="contact"></section>
-
+                                <button type="submit">Send</button>
+                            
+                              </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <a href="https://brittanychiang.com/" rel="noopener noreferrer" target="_blank">
+                    <div>Redesign of BrittanyChiang.com <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i>2023</div>
+                </a>
+            </footer>
+        </div>
 
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-
-        </div>
-    </footer>
-
-</body>
+</div>
 
 </html>
