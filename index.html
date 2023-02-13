@@ -14,34 +14,6 @@
     <title>Ginny Olchevski</title>
 
 </head>
-
-<style>
-
-</style>
-<script>
-    function toggle_menu() {
-        var x = document.getElementById("navbar");
-        if (x.className === "nav") {
-            x.className += " responsive";
-        } else {
-            x.className = "nav";
-        }
-
-        var y = document.getElementById("hambar");
-        if (y.className === "nav-ham") {
-            y.className += " responsive";
-        } else {
-            y.className = "nav-ham";
-        }
-
-        var z = document.getElementById("toggle_hamburger");
-        if (z.className === "ham-icon") {
-            z.className += " d-none";
-        } else {
-            z.className = "ham-icon";
-        }
-    }
-</script>
 <body>
 <div >
     <div class="page">
@@ -56,7 +28,7 @@
                 <div class="nav-links">
                     <ol class="nav" id="navbar">
                         <li><a href="#about">About</a></li>
-                       <!----<li><a href="#experience">Experience</a></li>--> 
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                      
                     </ol>
@@ -66,7 +38,7 @@
                 <ul class="nav-ham" id="hambar">
                     <li class="ham-btn"><a href="javascript:void(0);" onclick="toggle_menu()" ><i class="fa fa-bars"></i></a></li>
                     <li><a href="#about">About</a></li>
-                   <!----<li><a href="#experience">Experience</a></li>--> 
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                
@@ -96,7 +68,7 @@
                             <p>I am a full stack web developer. Currently, developing full-time at <a href="https://www.acistek.com/" target="_blank">Acistek</a></p>
                         </div>
                         <div class="mt-6">
-                           <a class="resume-button" href="javascript:void(0);" rel="noopener noreferrer"> This page is currently under construction<!---View my resume!---></a>
+                           <a class="resume-button" href="assets/Virginia_Olchevski_Web_Developer_Resume.pdf" rel="noopener noreferrer" target="_blank">View my resume!</a>
                             
                         </div>
                     </div>
@@ -140,18 +112,46 @@
                     </div>
                 </section>
 
-                <!---
-                <section id="experience" class="experience">
-                    <h3>My Experiences So Far</h3>
+                <section id="projects" class="experience">
+                    <h3>Projects</h3>
                     <div class="seperator"></div>
-                    <div class="content">
-                        <ul >
-                            <li>Acistek</li>
-                            <li>JMU University</li>
-                            <li>ASM Research</li>
-                        </ul>
+                    <div class="content justify-content-left">
+                      
+                        <a class="project" href="https://github.com/olchevskiv/lovepages" target="_blank">
+                            <div class="project-title">
+                                Lovepages
+                            </div>
+                            <div class="project-description">
+                                Digital scrapbook social media site
+                            </div>
+                            <div class="project-body">
+                                Python/Flask, HTML/CSS, Bootstrap, Javascript
+                            </div>
+                        </a>
+
+                        <a class="project" href="https://marinaolchevskaia.com/" target="_blank">
+                            <div class="project-title">
+                                Marina Olchevskaia
+                            </div>
+                            <div class="project-description">
+                                Artist portoflio site
+                            </div>
+                            <div class="project-body">
+                                HTML/CSS, Javascript
+                            </div>
+                        </a>
+
+                        <div class="project" >
+                            <div class="project-title">
+                               
+                            </div>
+                            <div class="project-description">
+                                . . .and more to come!
+                            </div>
+                        </div>
+
                     </div>
-                </section>----->
+                </section>
 
                 <section id="contact" class="contact">
                     <h3>Say Hello! <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i></h3>
@@ -193,12 +193,35 @@
             </main>
             <footer>
                 <a href="https://brittanychiang.com/" rel="noopener noreferrer" target="_blank">
-                    <div>Redesign of BrittanyChiang.com <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i>2023</div>
+                    <div>Inspired by BrittanyChiang.com <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i>2023</div>
                 </a>
             </footer>
         </div>
 
     </div>
 </div>
+<script>
+    function toggle_menu() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
 
+        var y = document.getElementById("hambar");
+        if (y.className === "nav-ham") {
+            y.className += " responsive";
+        } else {
+            y.className = "nav-ham";
+        }
+
+        var z = document.getElementById("toggle_hamburger");
+        if (z.className === "ham-icon") {
+            z.className += " d-none";
+        } else {
+            z.className = "ham-icon";
+        }
+    }
+</script>
 </html>
