@@ -218,6 +218,23 @@ section {
     max-width: 80%;
 }
 
+.blog {
+    margin: 0px auto;
+    padding: 0px 0px;
+    max-width: 80%;
+}
+
+.blog > .content > p {
+    margin-bottom: 28px;
+}
+
+.blog > .content > h4 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.blog > .content {
+    display: block;
+}
 
 .content {
     width: 100%;
@@ -325,6 +342,11 @@ section {
     font-family: var(--font-mono);
 }
 
+.sub-header {
+    font-size: var(--fz-lg);
+    padding-bottom: 18px;
+}
+
 h1,
 h2,
 h3,
@@ -348,8 +370,16 @@ h3 {
     align-items: center;
     margin: 10px 0px 30px;
     width: 100%;
-    font-size: clamp(26px,5vw,var(--fz-heading));
-    white-space: nowrap;
+    font-size: clamp(48px,5vw,var(--fz-heading));
+}
+
+h4 {
+    font-size: clamp(32px,5vw,var(--fz-lg));
+}
+
+h5 {
+    font-size: clamp(19px,5vw,var(--fz-xs));
+    font-weight: 500;
 }
 
 .seperator {
@@ -628,4 +658,8 @@ form > button {
 
 .mb-6 {
     margin-bottom: 1.5rem!important
+}
+
+.fa-clipboard:hover {
+    color: var(--red);
 }

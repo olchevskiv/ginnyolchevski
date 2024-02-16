@@ -29,6 +29,7 @@
                     <ol class="nav" id="navbar">
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                      
                     </ol>
@@ -39,6 +40,7 @@
                     <li class="ham-btn"><a href="javascript:void(0);" onclick="toggle_menu()" ><i class="fa fa-bars"></i></a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                
@@ -65,7 +67,7 @@
                         <div class="hero-title-sm" tabindex="0"><h4>Hello world, my name is</h4></div>
                         <div class="hero-title" tabindex="0"><h2>Ginny Olchevski</h2></div>
                         <div class="hero-description" tabindex="0">
-                            <p>I am a full stack web developer. Currently, developing full-time at <a href="https://www.acistek.com/" target="_blank">Acistek</a></p>
+                            <p>I am a full stack web developer. Currently, developing full-time at <a href="https://hathiant.com/" target="_blank">Hathiant</a></p>
                         </div>
                         <div class="mt-6">
                            <a class="resume-button" href="assets/Virginia_Olchevski_Web_Developer_Resume.pdf" rel="noopener noreferrer" target="_blank">View my resume!</a>
@@ -88,12 +90,12 @@
                         <div class="about-description" tabindex="0">
                             <p>
                                 Hello! I am Ginny, but I also go by Virginia. I am a full stack web developer currently working on various projects at 
-                                <a href="https://www.acistek.com/" target="_blank">Acistek</a> for a diverse range of clients. 
+                                <a href="https://hathiant.com/" target="_blank">Hathiant</a> (formerly known as Acistek) for a diverse range of clients. 
                                 My greatest enjoyment with web development is creating products that make clients go WOW!
                             </p>
 
                             <p>
-                                I have been working in this industry for over 2 years now and along with my work at Acistek, I have been focused on developing 
+                                I have been working in this industry for over 3 years now and along with my work at Acistek, I have been focused on developing 
                                 my skillset in building inclusive and enjoyable user web experiences. I like to say that I bring together two worlds with my formal education background in Computer Science and my hobby in art and design to create products that are both beautiful and functional.
                             </p>
 
@@ -153,6 +155,47 @@
                     </div>
                 </section>
 
+                <section id="blog">
+                    <h3>Blog</h3>
+                    <div class="seperator"></div>
+                    <div class="content justify-content-left">
+                      
+                        <a class="project" href="./blog/Understanding-508-compliance.html">
+                            <div class="project-title">
+                                Navigating the Web
+                            </div>
+                            <div class="project-description">
+                                Understanding 508 Compliance for a Universally Accessible Internet
+                            </div>
+                            <div class="project-body">
+                                Unpacking 508 compliance: its importance and challenges
+                            </div>
+                        </a>
+
+                        <a class="project" href="./blog/neumorphism.html">
+                            <div class="project-title">
+                                Navigating the Web
+                            </div>
+                            <div class="project-description">
+                                Exploring the Challenges of Neumorphism in UI/UX Design
+                            </div>
+                            <div class="project-body">
+                                Highighting the downsides of a popular design trend
+                            </div>
+                        </a>
+
+                        <div class="project" >
+                            <div class="project-title">
+                               
+                            </div>
+                            <div class="project-description">
+                                . . .and more to come!
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
                 <section id="contact" class="contact">
                     <h3>Say Hello! <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i></h3>
                     <div class="seperator"></div>
@@ -163,7 +206,7 @@
                                 Interested in reaching out to me? Fill out this handy contact form, and I'll do my best to reply within 24 hours.
                             </p>
                             <p class="mt-6 mb-6">
-                                Or you can email me directly at <span class="underline">ginnyolchevski@gmail.com</span>
+                                Or you can email me directly at <span class="underline" id="email">ginnyolchevski@gmail.com</span> <i class="fa fa-clipboard ml-1 mt-1" onclick="copy_to_clipboard('email');" aria-hidden="true"></i>
                             </p>
                         </div>
                         <div class="contact-form" tabindex="0">
@@ -201,6 +244,12 @@
     </div>
 </div>
 <script>
+
+    function copy_to_clipboard(id) {
+        var text = document.getElementById(id).innerHTML;
+        navigator.clipboard.writeText(text);
+    }
+
     function toggle_menu() {
         var x = document.getElementById("navbar");
         if (x.className === "nav") {
