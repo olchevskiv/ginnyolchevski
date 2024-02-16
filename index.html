@@ -29,7 +29,7 @@
                     <ol class="nav" id="navbar">
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <!--- <li><a href="#blog">Blog</a></li>--->
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                      
                     </ol>
@@ -40,7 +40,7 @@
                     <li class="ham-btn"><a href="javascript:void(0);" onclick="toggle_menu()" ><i class="fa fa-bars"></i></a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                     <!---<li><a href="#blog">Blog</a></li>--->
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                
@@ -155,13 +155,12 @@
                     </div>
                 </section>
 
-                <!---
                 <section id="blog">
                     <h3>Blog</h3>
                     <div class="seperator"></div>
                     <div class="content justify-content-left">
                       
-                        <a class="project" href="./blog/Understanding-508-compliance.html">
+                        <a class="project" href="javascript:void(0)" onclick="show_blog('blog1')">
                             <div class="project-title">
                                 Navigating the Web
                             </div>
@@ -173,7 +172,7 @@
                             </div>
                         </a>
 
-                        <a class="project" href="./blog/neumorphism.html">
+                        <a class="project" href="javascript:void(0)" onclick="show_blog('blog2')">
                             <div class="project-title">
                                 Navigating the Web
                             </div>
@@ -196,7 +195,7 @@
 
                     </div>
                 </section>
-                ----->
+
                 <section id="contact" class="contact">
                     <h3>Say Hello! <i class="fa fa-smile-o ml-3 mt-1" aria-hidden="true"></i></h3>
                     <div class="seperator"></div>
@@ -241,10 +240,227 @@
                 </a>
             </footer>
         </div>
+        <div id="blog1" class="d-none">
+            <main>
+                <div id="blog1_start" class="blog">
+                    <p><a href="javascript:void(0)" onclick="hide_blog();"><i class="fa fa-arrow-left ml-3 mt-1" aria-hidden="true"></i> Back to Home</a></p>
+                    <h3 tabindex="0">Navigating the Web: Understanding 508 Compliance for a Universally Accessible Internet</h3>
+                    <div class="seperator"></div>
+                    <div tabindex="0" class="sub-header">Jan 23, 2024</div>
+                    <div class="content justify-content-left">
+                        <p tabindex="0">
+                            In the ever-evolving landscape of the internet, creating a digital space that is inclusive and accessible to all users has become a non-negotiable priority. <mark>Section 508 of the Rehabilitation Act stands as a beacon, mandating that federal agencies' digital landscapes are accessible to individuals with disabilities.</mark> 
+                        </p>
+                        <p tabindex="0">
+                            <mark>While 508 compliance is integral for fostering an inclusive web, its implementation comes with its set of challenges, impacting both user experience and development processes.</mark> Let's delve into the realm of 508 compliance, exploring its pivotal role in creating an accessible internet while navigating the intricacies that may pose challenges in the development journey.
+                        </p>
 
+                        <h4 tabindex="0" >What is 508 Compliance?</h4>
+                        <p tabindex="0" >
+                            Section 508 is a federal law that requires all electronic and information technology developed, procured, maintained, or used by federal agencies to <mark>give people with disabilities access to information comparable to the access available to others</mark>. This includes websites, software, and other digital tools. While initially targeted at federal agencies, the principles of 508 compliance have had a ripple effect across various industries, promoting a more inclusive and user-friendly web for everyone.
+                        </p>
+
+                        <h4 tabindex="0" >The Impact on User Experience</h4>
+                            <h5 tabindex="0" >Improved Accessibility for All Users:</h5>
+                            <p tabindex="0" >
+                                508 compliance guidelines focus on making digital content accessible to people with a range of disabilities, including visual, auditory, motor, and cognitive impairments. Implementing these guidelines not only benefits individuals with disabilities but also enhances the overall user experience for everyone.
+                            </p>
+
+                            <h5 tabindex="0" >Enhanced Navigation and Usability:</h5>
+                            <p tabindex="0" >
+                                Designing with 508 compliance in mind often leads to clearer navigation structures and more straightforward user interfaces. This not only helps users with disabilities but also contributes to a better user experience for all visitors, leading to increased engagement and satisfaction.
+                            </p>
+                            <h5 tabindex="0" >Broader Audience Reach:
+                            </h5 tabindex="0" >
+                            <p tabindex="0" >
+                                By adhering to 508 compliance standards, websites can cater to a broader audience, including individuals with disabilities who may have been excluded otherwise. This can result in increased traffic, a more diverse user base, and improved brand perception.
+                            </p>
+
+                        <h4 tabindex="0" >The Crucial Role of Accessibility</h4>
+                            <h5 tabindex="0" >Visual Impairments:</h5>
+                            <p tabindex="0" >
+                                508 compliance addresses the needs of individuals with visual impairments by ensuring that websites are navigable using screen readers. This involves providing alternative text for images, proper heading structures, and ensuring color contrast for better readability.
+                            </p>
+                            <h5 tabindex="0" >Auditory Impairments:</h5>
+                            <p tabindex="0" >
+                                Consideration for auditory impairments involves providing captions and transcripts for multimedia content, making the information accessible to users who rely on text-based alternatives.
+                            </p>
+                            <h5 tabindex="0" >Motor Impairments:</h5>
+                            <p tabindex="0" >
+                                Web developers must design with motor impairments in mind, ensuring that websites can be easily navigated using a keyboard alone. This includes providing sufficient interactive elements and avoiding reliance on mouse-only interactions.
+                            </p>
+                            <h5 tabindex="0" >Cognitive Impairments:</h5>
+                            <p tabindex="0" >
+                                508 compliance aims to create websites that are easily understandable and navigable for individuals with cognitive impairments. This involves simplifying language, providing consistent navigation, and avoiding distracting or confusing elements.
+                            </p>
+
+                        <h4 tabindex="0" >The Road to Compliance</h4>
+                            <h5 tabindex="0" >Education and Training:</h5>
+                            <p tabindex="0" >
+                                Web developers and designers need to be educated on 508 compliance guidelines and how to implement them effectively. This may involve training sessions, workshops, or online resources to keep teams up-to-date with the latest standards. 
+                            </p>
+                            <h5 tabindex="0" >Regular Audits and Testing:</h5>
+                            <p tabindex="0" >
+                                Regular audits and testing are essential to ensure ongoing compliance. This includes testing websites with assistive technologies, conducting usability tests with individuals with disabilities, and addressing any issues that arise.
+                            </p>
+                            <h5 tabindex="0" >Collaboration with Stakeholders:</h5>
+                            <p tabindex="0" >
+                                Collaboration between developers, designers, content creators, and other stakeholders is crucial for successful implementation. By working together, teams can ensure that accessibility is considered at every stage of the development process.
+                            </p>
+
+                        <h4 tabindex="0" >Downsides to 508 Compliance</h4>
+                            <h5 tabindex="0" >Complexity and Development Costs:</h5>
+                            <p tabindex="0" >
+                                Achieving and maintaining 508 compliance can be complex and may require additional development time and resources, especially if it requires taking an existing system and updating it to become 508 compliant.
+                            </p>
+                            <h5 tabindex="0" >Potential Impact on Design Aesthetics:</h5>
+                            <p tabindex="0" >
+                                Striking a balance between a visually appealing design and strict adherence to accessibility guidelines can be challenging. Many commonly used color palettes and color shcemes that look good can fail color contrast checks.
+                            </p>
+                            <h5 tabindex="0" >Challenges in Keeping Up with Evolving Standards:</h5>
+                            <p tabindex="0" >
+                                Accessibility guidelines and standards are subject to change and evolution.
+                            </p>
+                            <h5 tabindex="0" >Risk of Overreliance on Automated Tools:</h5>
+                            <p tabindex="0" >
+                                Automated testing tools can be valuable for identifying certain accessibility issues, but they may not catch all nuances.
+                            </p>
+                            <h5 tabindex="0" >Misinterpretation of Guidelines:</h5>
+                            <p tabindex="0" >
+                                The extensive nature of accessibility guidelines can lead to misinterpretation or inconsistent implementation.
+                            </p>
+                            <h5 tabindex="0" >Impact on Innovation and Timelines:</h5>
+                            <p tabindex="0" >
+                                Striving for 508 compliance might lead to a more cautious approach to innovation.
+                            </p>
+                            <h5 tabindex="0" >Limited Standardization Across Industries:</h5>
+                            <p tabindex="0" >
+                                While Section 508 establishes standards for federal agencies, there is no universal standard for accessibility across all industries (yet).
+                            </p>
+                            <h5 tabindex="0" >Resistance to Change:</h5>
+                            <p tabindex="0" >
+                                Resistance to change within development teams or organizations can hinder the successful implementation of 508 compliance.
+                            </p>
+
+                        <h4 tabindex="0" >Conclusion</h4>
+                        <p tabindex="0" >
+                            Despite these challenges, the overall benefits of 508 compliance in creating an inclusive digital space far outweigh the downsides. By addressing these challenges proactively and fostering a culture of accessibility, developers can contribute to a web environment that is not only compliant with legal standards but also embraces inclusivity as a fundamental principle. As technology continues to advance, the commitment to accessibility remains a cornerstone in building a digital world that leaves no one behind.
+                        </p>
+
+                        <h4 tabindex="0" >Additional Resources</h4>
+                        <p tabindex="0" >
+                            For the most up-to-date and detailed information, consider consulting the following sources:
+                        </p>
+                        <p>
+                            <a href="https://www.section508.gov/" target="_blank">Section508.gov</a>
+                            <span tabindex="0" >The official website for Section 508 provides the latest standards, guidance, and resources.</span> <span tabindex="0" >(https://www.section508.gov/)</span>
+                        </p>
+                        <p>
+                            <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
+                            <span tabindex="0" >The World Wide Web Consortium's (W3C) Web Content Accessibility Guidelines are widely used for web accessibility standards.</span> <span tabindex="0" >(https://www.w3.org/WAI/WCAG21/quickref/)</span>
+                        </p>
+                        <p>
+                            <a href="https://www.access-board.gov/" target="_blank">U.S. Access Board</a>
+                            <span tabindex="0" >The U.S. Access Board is an independent federal agency that promotes equality for people with disabilities through leadership in accessible design and the development of accessibility guidelines.</span> <span tabindex="0" >(https://www.access-board.gov/)</span>
+                        </p>
+                        <p>
+                            <a href="https://webaim.org/" target="_blank">WebAIM (Web Accessibility in Mind)</a>
+                            <span tabindex="0" >WebAIM is a non-profit organization dedicated to improving accessibility to online learning materials. Their website provides valuable resources and training.</span> <span tabindex="0" >(https://webaim.org/)</span>
+                        </p>
+                        <p>
+                            <a href="https://www.a11yproject.com/" target="_blank">A11y Project</a>
+                            <span tabindex="0" >The A11y Project is an open-source project that provides guidance and resources to help make the web more accessible.</span> <span tabindex="0" >(https://www.a11yproject.com/)</span>
+                        </p>
+                        <p>
+                            <span tabindex="0" >Government Accessibility Laws and Policies:</span>
+                            <span tabindex="0" >Consult the official websites of government agencies, both at the federal and state levels, for the latest information on accessibility laws and policies.</span>
+
+                        </p>
+                    </div>
+                    <div class="seperator mb-5"></div>
+                    <h5 class="mt-5">Thanks for reading!</h5>
+                    <p><a href="">Take me back to the main page!</a></p>
+                    <p><a href="#blog1_start" >Back to top!</a></p>
+                </div>
+
+            </main>
+        </div>
+        <div id="blog2" class="d-none">
+            <main>
+                <div id="blog2_start" class="blog">
+                    <p><a href="javascript:void(0)" onclick="hide_blog();"><i class="fa fa-arrow-left ml-3 mt-1" aria-hidden="true"></i> Back to Home</a></p>
+                    <h3 tabindex="0">Navigating the Web: Exploring the Challenges of Neumorphism in UI/UX Design</h3>
+                    <div class="seperator"></div>
+                    <div tabindex="0" class="sub-header">Jan 16, 2024</div>
+                    <div class="content justify-content-left">
+                        <p tabindex="0">
+                            In the ever-evolving world of UI/UX design, staying ahead of the curve is essential for creating captivating and user-friendly interfaces. One trend that's been gaining immense popularity lately is Neumorphism, a design style that combines the principles of skeuomorphism and flat design to create a visually appealing user interface. However, like any design trend, it comes with its set of downsides that need careful consideration. In this post, I’ll briefly cover some downsides. 
+                        </p>
+
+                        <h4 tabindex="0" >Accessibility Challenges</h4>
+                        <p tabindex="0" >
+                            One of the major downsides of Neumorphism lies in its impact on accessibility. The subtle blending of elements with background colors can result in poor contrast, making it difficult for users with visual impairments to discern different elements on the interface. Accessibility should always be a top priority in design, and Neumorphism can pose challenges in achieving the necessary contrast ratios for readability.
+
+                        </p>
+
+                        <h4 tabindex="0" >Inconsistency Across Platforms</h4>
+                        <p tabindex="0" >
+                            Neumorphism often relies on subtle shadows and highlights to create a sense of depth, which can vary significantly across different platforms and devices. This inconsistency can lead to a disjointed user experience, as the design may not translate well from one device to another. Maintaining a consistent design language is crucial for a seamless user journey, and Neumorphism's reliance on subtle details can make achieving this consistency challenging.
+                        </p>
+                          
+                        <h4 tabindex="0" >Overemphasis on Aesthetics Over Functionality</h4>
+                        <p tabindex="0" >
+                            While Neumorphism is praised for its visually pleasing and modern look, it may sometimes prioritize aesthetics over functionality. The focus on creating a realistic, tangible appearance may lead to elements that are more difficult to interact with or understand. Users should not struggle to navigate or comprehend the interface due to an overemphasis on visual flair.
+                        </p>
+
+                        <h4 tabindex="0" >Limited Applicability</h4>
+                        <p tabindex="0" >
+                            Neumorphism's distinctive style may not be suitable for all types of applications or websites. It might be more appropriate for certain niches or industries that can benefit from its soft, skeuomorphic design. Using Neumorphism indiscriminately across various projects may result in a lack of suitability and could compromise the overall user experience.
+                        </p>
+
+                        <h4 tabindex="0" >Performance Concerns</h4>
+                        <p tabindex="0" >
+                            The intricacies of Neumorphism, especially when implemented with intricate details and multiple layers, can impact the performance of the application or website. Increased rendering times and resource consumption can lead to slower load times, affecting the overall user experience negatively. Balancing aesthetics with performance is crucial for creating a design that is both visually appealing and efficient.
+                        </p>
+                           
+                        <h4 tabindex="0" >Conclusion</h4>
+                        <p tabindex="0" >
+                            While Neumorphism has undeniably left its mark on UI/UX design, designers should be aware of its potential downsides. Striking a balance between aesthetics, functionality, and accessibility is crucial for creating a successful user experience. As with any design trend, thoughtful consideration and adaptability are key to ensuring that Neumorphism enhances rather than hinders the overall usability of a digital product.
+                        </p>
+
+                    </div>
+                    <div class="seperator mb-5"></div>
+                    <h5 class="mt-5">Thanks for reading!</h5>
+                    <p><a href="">Take me back to the main page!</a></p>
+                    <p><a href="#blog2_start" >Back to top!</a></p>
+                </div>
+
+            </main>
+        </div>
     </div>
 </div>
 <script>
+
+    function hide_blog(){
+        var mainContentElem = document.getElementById('content');
+        var blog1Elem = document.getElementById('blog1');
+        var blog2Elem = document.getElementById('blog2');
+
+        blog1Elem.classList.add("d-none");
+        blog2Elem.classList.add("d-none");
+        mainContentElem.classList.remove("d-none");
+    }
+
+    function show_blog(id) {
+        var mainContentElem = document.getElementById('content');
+        var blogElem = document.getElementById(id);
+
+        mainContentElem.classList.add("d-none");
+        blogElem.classList.remove("d-none");
+
+        window.scrollTo(0, 0);
+
+    }
 
     function copy_to_clipboard(id) {
         var text = document.getElementById(id).innerHTML;
