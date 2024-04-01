@@ -152,6 +152,7 @@ nav {
 }
 .nav-links ol li a {
     padding: 10px;
+    font-size: var(--fz-xl);
 }
 
 .ham-icon, .nav-ham {
@@ -162,12 +163,18 @@ nav {
     list-style: none;
     font-size: var(--fz-sm);
     padding-left: 0px;
+    background-color: var(--bg-light);
 }
 
 .nav-ham > li {
     margin-bottom: 5px;
     text-align:right;
 }
+
+.nav-ham > li > a {
+    font-size: var(--fz-xxl);
+}
+
 
 a {
     display: inline-block;
@@ -224,6 +231,10 @@ section {
     max-width: 80%;
 }
 
+.blog > .content {
+    display: block;
+}
+
 .blog > .content > p {
     margin-bottom: 28px;
 }
@@ -232,8 +243,9 @@ section {
     margin-top: 60px;
     margin-bottom: 20px;
 }
-.blog > .content {
-    display: block;
+
+#blog > .content {
+    gap: 20px;
 }
 
 .content {
@@ -241,6 +253,10 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+
+#projects > .content {
+    gap: 20px;
 }
 
 .justify-content-left {
@@ -312,15 +328,15 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 250px;
-    height: 240px;
-    max-width: 250px;
+
+    height: 280px;
+    width: 250px;
+
     word-wrap: break-word;
     background-clip: border-box;
 
+    
     padding: 20px;
-    margin-right: 30px;
-    margin-bottom: 20px;
 }
 
 .project:hover{
@@ -436,11 +452,15 @@ p > a:hover {
     .about-description {
         width:100%;
     }
-    
+    main {
+        padding: 150px 0;
+    }
     .about-image {
         display:none;
     }
-    
+    header {
+        background: var(--bg-light);
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -448,7 +468,12 @@ p > a:hover {
   .ham-icon {
     display: block;
   }
-
+  main {
+        padding: 150px 0;
+    }
+header {
+    background: var(--bg-light);
+}
 }
 
 @media screen and (max-width: 1600px) {
@@ -662,4 +687,19 @@ form > button {
 
 .fa-clipboard:hover {
     color: var(--red);
+}
+
+.fz-md {
+    font-size: var(--fz-md)!important;
+}
+
+.fz-lg {
+    font-size: var(--fz-lg)!important;
+}
+
+.fz-xl {
+    font-size: var(--fz-xl)!important;
+}
+.fz-xxl {
+    font-size: var(--fz-xxl)!important;
 }
