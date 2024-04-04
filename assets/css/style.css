@@ -275,7 +275,7 @@ section {
 }
 
 .about-image > img {
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -455,8 +455,11 @@ p > a:hover {
     main {
         padding: 150px 0;
     }
+    #about > .content {
+       justify-content: center;
+    }
     .about-image {
-        display:none;
+        width:80% !important;
     }
     header {
         background: var(--bg-light);
@@ -471,9 +474,9 @@ p > a:hover {
   main {
         padding: 150px 0;
     }
-header {
-    background: var(--bg-light);
-}
+    header {
+        background: var(--bg-light);
+    }
 }
 
 @media screen and (max-width: 1600px) {
