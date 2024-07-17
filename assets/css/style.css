@@ -145,6 +145,7 @@ nav {
     position: relative;
     counter-increment: item 1;
     font-size: var(--fz-xs);
+    background-color: var(--bg-light);
 }
 
 .d-none {
