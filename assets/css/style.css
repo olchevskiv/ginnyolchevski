@@ -253,7 +253,12 @@ section {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    gap: 40px;
     justify-content: space-between;
+}
+
+.nowrap {
+    flex-wrap: nowrap !important;
 }
 
 #projects > .content {
@@ -265,14 +270,15 @@ section {
 }
 
 .about-description {
-    width:60%;
+   flex-grow: 1;
 }
 
 .about-image {
     width:40%;
+    max-width: 300px;
     margin-bottom: 20px;
     padding-left: 30px;
-    align-self: center;
+    align-self: top;
 }
 
 .about-image > img {
@@ -434,7 +440,8 @@ p > a:hover {
         width:100%;
     }
     section {
-        padding: 80px 0;
+        margin: 0 20px;
+        max-width: 100%;
     }
     main {
         padding: 150px 0;
