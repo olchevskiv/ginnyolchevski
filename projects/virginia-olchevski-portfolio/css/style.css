@@ -30,6 +30,11 @@ h1 {
 h2 {
     font-size: 4rem;
 }
+@media(max-width:500px){
+    h2 {
+        font-size: 3rem;
+    }
+}
 p {
     font-size: 1.5rem;
 }
@@ -192,6 +197,14 @@ section.hero {
     padding: 0px 20px;
     word-break: break-word;
 }
+@media(max-width:600px) {
+    .link-list .link-list-item {
+        font-size:1.5rem;
+    }
+    .hide-sm {
+        display: none;
+    }
+}
 .link-list .link-list-item:not(:last-child) {
     border-bottom: 1px solid var(--background-contrast);
 }
@@ -235,7 +248,8 @@ section.split .right-half img {
 }
 
 section .heading {
-    
+    padding: 10px 20px;
+    text-align: start;
     border-bottom: 1px solid var(--background-contrast);
 }
 .box-carousel {
